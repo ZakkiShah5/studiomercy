@@ -1,0 +1,24 @@
+.Flex-albums{
+    margin: 40px 0;
+}
+.Flex-albums .border-btn button{
+    font-family: sans-serif;
+    color: #fff;
+}
+.album-slider img{
+    width: 90%;
+}
+.album-slider-mobile{
+    display: none;
+}
+@media (max-width:768px) {
+    .album-slider-mobile{
+        display: block;
+    }
+    .album-slider{
+        display: none;
+    }
+    .album-slider-mobile img{
+        width: 90%;
+    }
+}

@@ -1,0 +1,11 @@
+.Footer{
+    background: linear-gradient(202deg, #7F00FF 15%, rgb(98, 29, 209) 87%);;
+    text-align: center;
+    padding: 20px 0;
+}
+.test{
+    font-size: 14px;
+}
+.test strong a{
+    color: #ff1b54;
+}

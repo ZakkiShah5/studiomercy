@@ -1,0 +1,13 @@
+.Sponsors{
+    margin: 60px 0;
+}
+.Sponsors .flex-sponsors{
+    display: flex;
+    justify-content: center;
+}
+.Sponsors .image{
+    max-width: 500px;
+}
+.Sponsors .image img{
+    width: 100%;
+}

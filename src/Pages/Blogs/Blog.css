@@ -1,0 +1,21 @@
+.titled{
+    text-align: center;
+    font-family: 'mercy';
+    margin-top: 100px;
+}
+.blogs .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.blogs .container .blogForm{
+    flex: 0.3;
+}
+.blogs .container .blog{
+    flex: 0.7;
+}
+@media screen and (max-width: 760px) {
+    .blogs .container{
+        flex-direction: column;
+    }
+}

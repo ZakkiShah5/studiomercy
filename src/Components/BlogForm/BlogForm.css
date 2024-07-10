@@ -1,0 +1,19 @@
+form input{
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+}
+form textarea{
+    height: 150px;
+    resize: vertical;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+form .border-btn button{
+    border-radius: 0px;
+    width: 100%;
+}
+form .border-btn{
+    margin-top: 20px;
+}

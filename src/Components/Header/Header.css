@@ -1,0 +1,127 @@
+.Header{
+    margin: 0;
+    font-family: 'mercy';
+    position: relative;
+    width: 100%;
+    background: linear-gradient(202deg, #7F00FF 15%, rgb(98, 29, 209) 87%);
+    z-index: 1;
+    margin-bottom: 80px;
+}
+.Header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(202deg, #7F00FF 15%, rgb(98, 29, 209) 87%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.Header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 18px;
+}
+.navbar li{
+    cursor: pointer;
+    transition: 500ms;
+}
+.navbar li:hover{
+    color: #ff1b54;
+    transform: translateY(-4px) ;
+}
+.navbar li a:hover{
+    color: #ff1b54;
+    transform: translateY(-4px) ;
+}
+.Header .buttons button{
+    font-family: 'mercy';
+}
+.Header .logo h2{
+    font-size: 24px;
+    text-shadow: -3px 1px 9px rgba(255,104,140,0.6);
+}
+.Header .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.header-icon.yt{
+    color: red;
+}
+.header-icon.sc{
+    color: orange;
+}
+.header-icon.bc{
+    color: #23a5b4;
+}
+.BigLinks{
+    color: #fff;
+    text-decoration: none;
+}
+.mobile-menu-bar .mobile{
+    display: none;
+}
+.hamburger, .cross{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+    .Header .navbar{
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        font-size: 30px;
+        color: #fff;
+    }
+    .mobile-menu-bar .mobile li{
+        list-style: none;
+        font-size: 24px;
+    }
+    .mobile-menu-bar .mobile{
+        display: flex;
+        justify-content: flex-start;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .mobile-menu-bar{
+        position: fixed;
+        top: 0;
+        left: -340px;
+        width: 300px;
+        display: block;
+        background: #7F00FF;
+        padding: 20px;
+        height: 100vh;
+        transition: 500ms;
+    }
+    .mobile-menu-bar .icons{
+        margin-top: 30px;
+        gap: 15px;
+        justify-content: flex-start;
+    }
+    .cross{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cross-icon{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .active{
+        left: 0;
+    }
+}

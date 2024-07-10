@@ -1,0 +1,154 @@
+.AlbumBox {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-image: url(../../Assets/background.png);
+    background-position: center bottom;
+    animation: animatedBackground 10s linear infinite alternate;
+    background-size: 105% !important;
+}
+@keyframes animatedBackground {
+    0%{background-position: left bottom;}
+    100%{background-position: right bottom;}
+    
+}
+
+.AlbumBox .image {
+    width: 300px;
+    position: relative;
+}
+
+.AlbumBox .image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Box-1 {
+    position: relative;
+}
+
+.AlbumBox .border-btn {
+    margin-top: 0px;
+}
+
+.AlbumBox .overlay {
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.Box-1 .image:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.AlbumBox .overlay:hover .playIcon {
+    font-size: 50px;
+}
+
+.playIcon {
+    font-size: 35px;
+    color: rgba(231, 228, 228, 0.75);
+    cursor: pointer;
+    transition: font-size 250ms;
+}
+
+.AlbumBox .border-btn button {
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    background: #ff1b54;
+    border: none;
+}
+
+/* Player */
+.bigPlayer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(132, 30, 249, 0.8);
+    height: 80px;
+}
+
+.bigPlayer .player-conatainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+}
+
+.icon-play {
+    background-color: #7F00FF;
+    font-size: 40px;
+    border: 4px solid #7F00FF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nexprev {
+    font-size: 30px;
+    background-color: #7F00FF;
+    border: 1px solid #7F00FF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+}
+.songTitle h3{
+    position: absolute;
+    left: 15%;
+    top: 10px;
+    color: #fff;
+    font-family: 'mercy';
+}
+.songTitle h3 span{
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.seekBack{
+    height: 5px;
+    width: 100%;
+    background-color: #3d0278;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.seekBar{
+    background-color: #fff;
+    width: 0px;
+    height: 5px;
+}
+@media (max-width:768px) {
+    .bigPlayer{
+        height: 120px;
+    }
+    .songTitle h3{
+        top: 20px;
+        left: 10px;
+    }
+}
+@media (max-width:468px) {
+    .bigPlayer{
+        height: 120px;
+    }
+    .songTitle h3{
+        top: -10px;
+        left: 20%;
+        font-size: 16px;
+    }
+    .seekBack{
+        margin-top: 40px;
+    }
+}

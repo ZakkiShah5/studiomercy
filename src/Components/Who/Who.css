@@ -1,0 +1,23 @@
+.Who{
+    margin: 40px 0;
+}
+.Who .container{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.Who h1{
+    font-family: 'mercy';
+}
+.Who p{
+    font-size: 24px;
+}
+.Who fieldset{
+    border: 3px solid #fff;
+}
+@media (max-width: 456px) {
+    .Who p{
+        font-size: 18px;
+    }
+}
